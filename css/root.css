@@ -64,9 +64,11 @@ Any html file SHOULD use this CSS file, loaded first to all CSS files.
   please delete the button key and add
   the auto-updater*/
   button {
-    background-color: var(--banner-yes); /* Green */
+      /* Changed the button to meet WCAG standards: AA, AAA */
+      /* https://dequeuniversity.com/rules/axe/4.8/color-contrast */
+    background-color: #41C84B; /* Green */
     border: none;
-    color: white;
+    color: #000000; /* Solid Black */
     padding: 20px 32px;
     text-decoration: none;
     display: inline-block;
